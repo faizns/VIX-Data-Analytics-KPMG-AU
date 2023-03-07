@@ -1,5 +1,10 @@
 # **Data Analytics Consulting Virtual Internship Experience - KPMG AU**
 
+Tool : Python
+Visualization : Tableau
+Dataset from [KPMG](https://www.theforage.com/modules/m7W4GMqeT3bh9Nb2c/S3uFvbDL49EA43ukg?ref=Mx49trZJgFSC9W2ih)
+
+
 ## 📂 **Overview**
 
 KPMG is a global organization of independent professional firms that provides a range of services to organizations across various industries, government, and non-profit sectors. Its service areas include Audit, Assurance & Risk Consulting; Deals, Tax & Legal; Management Consulting; and Innovation & Digital Solutions.
