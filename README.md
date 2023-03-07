@@ -1,8 +1,8 @@
 # **Data Analytics Consulting Virtual Internship Experience - KPMG AU**
 
-Tool : Python
-Visualization : Tableau
-Dataset from [KPMG](https://www.theforage.com/modules/m7W4GMqeT3bh9Nb2c/S3uFvbDL49EA43ukg?ref=Mx49trZJgFSC9W2ih)
+Tool : Python <br>
+Visualization : Tableau <br>
+Source Dataset : [KPMG](https://www.theforage.com/modules/m7W4GMqeT3bh9Nb2c/S3uFvbDL49EA43ukg?ref=Mx49trZJgFSC9W2ih)
 
 
 ## 📂 **Overview**
@@ -14,7 +14,7 @@ Under the KPMG Digital Solutions service, as part of the Data, Analytics & Model
 The client provided KPMG with 3 datasets:
 - Customer demographics
 - Customer addresses
-- Transactions
+- Transactions<br>
 <br>
 
 ---
@@ -30,11 +30,13 @@ Sprocket Central Pty Ltd needs help with its customer and transactions data. The
 The client provided KPMG with 3 datasets:
 - Customer Demographic 
 - Customer Addresses
-- Transactions data in the past 3 months
+- Transactions data in the past 3 months <br>
+<br>
 
 ### **Objectives**
 - Review and evaluate the data based on Standard Data Quality Dimensions.
-- Identify strategies to mitigate that issues.
+- Identify strategies to mitigate that issues.<br>
+<br>
 
 ### **Result**
 [Check out the analysis in the notebook!](https://github.com/faizns/VIX-Data-Analytics-KPMG-AU/blob/main/Task%201%20-%20KPMG%20VIX.ipynb) <br>
@@ -94,21 +96,22 @@ There are inconsistent datatypes and values for the same column.
 ## 📂 **Task 2 - Data Insights**
 
 ### **Background Information**
-Sprocket Central Pty Ltd marketing team is looking to boost business by analysing their existing customer dataset to determine customer trends and behaviour. Using the existing 3 datasets (Customer demographic, customer address and transactions) as a labelled dataset, we will recommend which of these 1000 new customers should be targeted to drive the most value for the organisation. 
-
+Sprocket Central Pty Ltd marketing team is looking to boost business by analysing their existing customer dataset to determine customer trends and behaviour. Using the existing 3 datasets (Customer demographic, customer address and transactions) as a labelled dataset, we will recommend which of these 1000 new customers should be targeted to drive the most value for the organisation. <br>
+<br>
 
 ### **Objective**
 - Built customer segmentation based on RFM model
-- Analyzing customer trends, behaviour, and demographic
+- Analyzing customer trends, behaviour, and demographic<br>
+<br>
 
 ### **Result**
 [Check out the analysis in the notebook!]() <br>
 
 #### **RFM Analysis**
 RFM is a basic customer segmentation algorithm based on their purchasing behavior. The behavior is identified by using only three customer data points: recency, frequency, and monetary. In this project we use Transactions tabel.
-- The recency value of each customer is obtained from the smallest recency value from the dataset.
-- The frequency value of each customer is obtained from the count of transactions they place.
-- The monetary value of each customer is obtained from the profit.
+- The **recency** value of each customer is obtained from the **smallest recency value from the dataset**.
+- The **frequency** value of each customer is obtained from the **count of transactions** they place.
+- The **monetary** value of each customer is obtained from the **profit**.
 
 <br>
 <p align="center">
@@ -118,14 +121,16 @@ RFM is a basic customer segmentation algorithm based on their purchasing behavio
 <br>
 
 We calculating the overall RFM score based on:
-- Concatenation: creating segments, here we just concatenate (not add) individual RFM scores like strings and get labeled segments in return. The highest is 555 and the lowest is 111.
-- Average: creating a score, here we find the average of the individual RFM scores indicating the customer's score. Highest 5 and lowest 1 and we can use this to create more human friendly labelled categories (Diamond, Platinum, Gold, Silver, Bronze)
+- **Concatenation**: creating segments, here we just concatenate (not add) individual RFM scores like strings and get labeled segments in return. The highest is 555 and the lowest is 111.
+- **Average**: creating score, here we find the average of the individual RFM scores indicating the customer's score. Highest 5 and lowest 1 and we can use this to create more human friendly labelled categories (**Diamond, Platinum, Gold, Silver, Bronze**)
 
 <br>
 <p align="center">
   <kbd> <img width="800" alt="newplot (3)" src="https://user-images.githubusercontent.com/115857221/223327109-28089ef6-642e-4db6-b200-d31f8f0ba96e.png"> </kbd> <br>
     Figure 1 — RFM Plot Based on Cluster Score
 </p>
+
+From the above plot, we can see how the customers are spread among Recency, Frequency and Monetary dimension. Customers in cluster **Diamond (blue)** have **made recent purchases with a high frequency, and high amounts (monetary)**. On the other hand, customers in Bronze (yellow) have low recency and monetery and haven't purchased for long time.<br>
 <br>
 
 
@@ -134,7 +139,13 @@ We calculating the overall RFM score based on:
   <kbd> <img width="500" alt="percent" src="https://user-images.githubusercontent.com/115857221/223327833-5b3f7bf7-2247-41fc-8619-228232338bc3.png"></kbd><br>
     Figure 2 — Percentage of Total Customers and Monetary Based on Cluster Score
 </p>
+
+**Most of customers are Platinum** with a percentage of profit contribution (monetary) of 27%. Customers who **contribute the most to generating the highest profit are Diamond**, which is 39%. But, the number of Diamond is low enough which is 17%.<br>
+
 <br>
+<p align="center">
+    Table 2 — Interpretation Result
+</p>
 
 |Customer Score|%|Most RFM Segment|RFM Interpretation|Actionable Insight|
 |---|---|---|---|---|
@@ -151,65 +162,58 @@ We focused on analyzing the Diamond Customers because they are the most generate
 <br>
 <p align="center">
   <kbd> <img width="500" alt="age gender" src="https://user-images.githubusercontent.com/115857221/223329095-1fd75486-fc28-4f24-b983-fab353c8bd93.png"></kbd> <br>
-    Figure — 
-</p>
-<br>
-
-<br>
-<p align="center">
-  <kbd> <img width="500" alt="age wealth" src="https://user-images.githubusercontent.com/115857221/223329120-380edbce-98c6-475b-965c-33831a4f8ce6.png"></kbd> <br>
-    Figure — 
+    Figure 3 —  Most customers are in the age class 40 - 50, the highest frequency of Diamond customers is in the age range 36 - 55. From this graph, it can also be seen that gender has an almost equal distribution.
 </p>
 <br>
 
 <br>
 <p align="center">
   <kbd> <img width="500" alt="state" src="https://user-images.githubusercontent.com/115857221/223329175-8f30d523-9a6c-4c57-bbfb-b1d68906a8e8.png"> </kbd> <br>
-    Figure — 
+    Figure 4 — The majority of Diamond customers are from New South Wales.
 </p>
 <br>
 
 <br>
 <p align="center">
   <kbd> <img width="500" alt="weatlh state" src="https://user-images.githubusercontent.com/115857221/223329230-4b3e5009-9acc-4218-9686-2d910d0c288b.png"> </kbd> <br>
-    Figure — 
+    Figure 5 — Most of the customers come from Mass Customers, which is twice as much as the total Affluent Customers/High Net Worth. From this graph it can also be seen that NSW also still has a high value.
 </p>
 <br>
 
 <br>
 <p align="center">
   <kbd> <img width="500" alt="properti valuation" src="https://user-images.githubusercontent.com/115857221/223329307-608d17c8-0b9c-4448-9282-0748b84f3709.png"> </kbd> <br>
-    Figure — 
+    Figure 6 — Most Diamond customers have property valuation in range 7 - 10.
 </p>
 <br>
 
 <br>
 <p align="center">
   <kbd> <img width="700" alt="distribution" src="https://user-images.githubusercontent.com/115857221/223329279-2bbe0af0-e89a-4bcb-86c4-520e56f53f72.png"></kbd> <br>
-    Figure — 
+    Figure 7 — Most of Diamond customers are work in manufacturing, financial services, and health industry.
 </p>
 <br>
 
 Based on the analysis, potential customers who have high value for the organisation are:
-- Aged between 35 - 55
-- Work in manufacture, financial services, or health industry
-- Classified as mass customer
-- Live in New South Wales
-- Have property valuation at 7-10
+- Aged between **35 - 55**
+- Work in **manufacturing, financial services, or health industry**
+- Classified as **mass customer**
+- Live in **New South Wales**
+- Have **property valuation at 7 - 10**
 
-From these criteria above, we have 668 out of 1000 new customers who can be targeted for marketing strategies and potentially generate revenue for the company.
-
-
+From these criteria above, we have **668** out of 1000 new customers who can be targeted for marketing strategies and potentially generate revenue for the company.
 
 ---
 
 ## 📂 **Task 3 - Data Insights and Presentation**
 
 ### **Background Information**
-After building the model we need to present our results back to the client. A list of customers or algorithm won’t cut it with the client, we need to support our results with the use of visualisations.
+After building the model we need to present our results back to the client. A list of customers or algorithm won’t cut it with the client, we need to support our results with the use of visualisations.<br>
+<br>
 
 ### **Objective**
-- Develop a dashboard
+- Develop a dashboard<br>
+<br>
 
 ### **Result**
 [Check out in the Tableau!]() <br>
